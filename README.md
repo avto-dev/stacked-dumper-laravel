@@ -11,7 +11,7 @@
 [![Downloads count][badge_downloads_count]][link_packagist]
 [![License][badge_license]][link_license]
 
-Using this package you can dump any variables using `\dev\dump()` and `\dev\dd()` function **without** main process stopping or sending data to the standard output _(last is required for running applications using RoadRunner)_.
+Using this package you can dump any variables using `\dev\dump()` and `\dev\dd()` function **without** main process stopping or sending data to the standard output _(last is required for running applications using [RoadRunner][roadrunner])_.
 
 ## Install
 
@@ -51,7 +51,7 @@ For example, if you trying to `dump('test');` in controller, you will see someth
 worker error: invalid data found in the buffer (possible echo)
 ```
 
-But, if you will use helpers provided by this package, all will forks fine:
+But, if you will use helpers provided by this package `\dev\dump('test');`, all will forks fine:
 
 ```text
 "test"
@@ -106,3 +106,4 @@ This is open-sourced software licensed under the [MIT License][link_license].
 [link_pulls]:https://github.com/avto-dev/stacked-dumper-laravel/pulls
 [link_license]:https://github.com/avto-dev/stacked-dumper-laravel/blob/master/LICENSE
 [getcomposer]:https://getcomposer.org/download/
+[roadrunner]:https://github.com/spiral/roadrunner
