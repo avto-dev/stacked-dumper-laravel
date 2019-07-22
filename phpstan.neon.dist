@@ -1,0 +1,6 @@
+parameters:
+  level: 'max'
+  autoload_files:
+    - %currentWorkingDirectory%/functions/dump.php
+  paths:
+    - src
