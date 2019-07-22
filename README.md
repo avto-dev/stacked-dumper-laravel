@@ -17,7 +17,7 @@ Using this package you can dump any variables using `\dev\dump()` and `\dev\dd()
 
 Require this package with composer using the following command:
 
-```shell
+```bash
 $ composer require --dev avto-dev/stacked-dumper-laravel "^1.0"
 ```
 
