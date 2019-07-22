@@ -19,7 +19,7 @@ class VarDumperExceptionTest extends AbstractTestCase
     protected $exception;
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected function setUp(): void
     {

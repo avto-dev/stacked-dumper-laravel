@@ -4,8 +4,8 @@ declare(strict_types = 1);
 
 namespace AvtoDev\StackedDumper\Tests;
 
-use AvtoDev\StackedDumper\Exceptions\VarDumperException;
 use AvtoDev\StackedDumper\Stack\DumpStackInterface;
+use AvtoDev\StackedDumper\Exceptions\VarDumperException;
 
 /**
  * @coversNothing
@@ -13,7 +13,7 @@ use AvtoDev\StackedDumper\Stack\DumpStackInterface;
 class FunctionsTest extends AbstractTestCase
 {
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected function setUp(): void
     {

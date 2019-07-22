@@ -86,7 +86,7 @@ if (! \function_exists('\\dev\\dump')) {
         if (ran_using_cli() === true) {
             // @codeCoverageIgnoreStart
             \dump(...$_);
-            // @codeCoverageIgnoreEnd
+        // @codeCoverageIgnoreEnd
         } else {
             $dumper = new HtmlDumper;
 
