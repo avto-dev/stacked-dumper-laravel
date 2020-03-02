@@ -4,11 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## Unreleased
+## v1.2.0
 
 ### Added
 
 - GitHub actions for a tests running
+
+### Changed
+
+- Maximal `illuminate/*` packages version now is `7.*`
 
 ## v1.1.0
 

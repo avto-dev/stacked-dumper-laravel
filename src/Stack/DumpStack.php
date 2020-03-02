@@ -13,8 +13,10 @@ class DumpStack implements DumpStackInterface
 
     /**
      * {@inheritdoc}
+     *
+     * @return void
      */
-    public function push(string $data)
+    public function push(string $data): void
     {
         $this->stack[] = $data;
     }
