@@ -17,27 +17,13 @@ Using this package you can dump any variables using `\dev\dump()` and `\dev\dd()
 
 Require this package with composer using the following command:
 
-```bash
+```shell script
 $ composer require --dev avto-dev/stacked-dumper-laravel "^1.0"
 ```
 
 > Installed `composer` is required ([how to install composer][getcomposer]).
 
 > You need to fix the major version of package.
-
-> If you wants to disable package service-provider auto discover, just add into your `composer.json` next lines:
->
-> ```json
-> {
->     "extra": {
->         "laravel": {
->             "dont-discover": [
->                 "avto-dev/stacked-dumper-laravel"
->             ]
->         }
->     }
-> }
-> ```
 
 ## Usage
 
@@ -61,7 +47,7 @@ But, if you will use helpers provided by this package `\dev\dump('test');`, all 
 
 For package testing we use `phpunit` framework and `docker-ce` + `docker-compose` as develop environment. So, just write into your terminal after repository cloning:
 
-```bash
+```shell script
 $ make build
 $ make latest # or 'make lowest'
 $ make test

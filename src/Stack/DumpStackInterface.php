@@ -10,6 +10,8 @@ interface DumpStackInterface extends Countable
      * Push an element into stack.
      *
      * @param string $data
+     *
+     * @return mixed|void
      */
     public function push(string $data);
 

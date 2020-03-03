@@ -61,7 +61,7 @@ class VarDumperException extends \Exception
      *
      * @return string
      */
-    protected static function generateView($content):string
+    protected static function generateView($content): string
     {
         return <<<EOT
 <html>
