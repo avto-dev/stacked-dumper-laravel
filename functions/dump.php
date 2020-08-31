@@ -57,7 +57,7 @@ if (! \function_exists('\\dev\\dd')) {
                     \dump($argument);
                 }
 
-                die(1);
+                exit(1);
             }
             // @codeCoverageIgnoreEnd
         } else {
