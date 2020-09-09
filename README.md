@@ -31,7 +31,7 @@ In any part of your application call `\dev\dump()` and/or `\dev\dd()`. That's al
 
 ### RoadRunner use-case
 
-For example, if you trying to `dump('test');` in controller, you will see something like that:
+For example, if you will try to `dump('test');` in controller, you will see something like that:
 
 ```text
 worker error: invalid data found in the buffer (possible echo)
