@@ -96,7 +96,7 @@ if (! \function_exists('\\dev\\dump')) {
                 $stack = Container::getInstance()->make(DumpStackInterface::class);
 
                 foreach ($_ as $argument) {
-                    $stack->push($dumper->dump((new VarCloner)->cloneVar($argument), true));
+                    $stack->push((string) $dumper->dump((new VarCloner)->cloneVar($argument), true));
                 }
             }
         }

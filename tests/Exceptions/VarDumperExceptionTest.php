@@ -63,9 +63,9 @@ class VarDumperExceptionTest extends AbstractTestCase
     {
         $response = $this->exception->render();
 
-        $this->assertContains($this->exception->getMessage(), $response->getContent());
-        $this->assertContains('<html', $response->getContent());
-        $this->assertContains('<body', $response->getContent());
+        $this->assertStringContainsString($this->exception->getMessage(), $response->getContent());
+        $this->assertStringContainsString('<html', $response->getContent());
+        $this->assertStringContainsString('<body', $response->getContent());
         $this->assertSame($this->exception->getCode(), $response->getStatusCode());
     }
 }

@@ -39,14 +39,14 @@ class VarDumperMiddlewareTest extends AbstractTestCase
         $response3 = $this->get($path);
 
         foreach (['foo bar', 'john doe', 'bar baz', 'window.Sfdump'] as $item) {
-            $this->assertContains($item, $response1->getContent());
-            $this->assertContains($item, $response2->getContent());
+            $this->assertStringContainsString($item, $response1->getContent());
+            $this->assertStringContainsString($item, $response2->getContent());
         }
 
         foreach (['foo bar', 'john doe', 'window.Sfdump'] as $item) {
-            $this->assertNotContains($item, $response3->getContent());
+            $this->assertStringNotContainsString($item, $response3->getContent());
         }
-        $this->assertContains('bar baz', $response3->getContent());
+        $this->assertStringContainsString('bar baz', $response3->getContent());
     }
 
     /**
@@ -77,9 +77,9 @@ class VarDumperMiddlewareTest extends AbstractTestCase
         $response_without_middleware = $this->get($path_without_middleware);
 
         foreach ([$response_with_middleware, $response_without_middleware] as $response) {
-            $this->assertContains('foo bar', $response->getContent());
-            $this->assertContains('window.Sfdump', $response->getContent());
-            $this->assertNotContains('bar baz', $response->getContent());
+            $this->assertStringContainsString('foo bar', $response->getContent());
+            $this->assertStringContainsString('window.Sfdump', $response->getContent());
+            $this->assertStringNotContainsString('bar baz', $response->getContent());
         }
     }
 }
