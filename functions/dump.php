@@ -26,6 +26,11 @@ if (! \function_exists('\\dev\\ran_using_cli')) {
         if (((bool) \getenv('RR_HTTP')) === true) {
             return false;
         }
+        
+        // Detect running under RoadRunner (since RR v2)
+        if (\getenv('RR_MODE') === 'http') {
+            return true;   
+        }
 
         return \in_array(\PHP_SAPI, ['cli', 'phpdbg'], true);
     }
