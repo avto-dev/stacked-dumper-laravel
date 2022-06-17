@@ -24,7 +24,11 @@ jobs: # Docs: <https://git.io/JvxXE>
         php: ['7.2', '7.3', '7.4', '8.0']
         include:
           - php: '7.3'
-            setup: basic
+            setup: default
+            coverage: no
+            laravel: '^7.0'
+          - php: '7.4'
+            setup: default
             coverage: no
             laravel: '^7.0'
     steps:
