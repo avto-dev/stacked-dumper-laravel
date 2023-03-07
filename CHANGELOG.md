@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## 1.6.1
+
+### Added
+
+- Support Laravel `10.x`
+
 ## v1.6.0
 
 ### Added
