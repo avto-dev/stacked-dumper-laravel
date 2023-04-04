@@ -15,7 +15,9 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function boot(): void
     {
-        $this->app->make(Kernel::class)->pushMiddleware(Middleware\VarDumperMiddleware::class);
+        /** @var \Illuminate\Foundation\Http\Kernel $kernel */
+        $kernel = $this->app->make(Kernel::class);
+        $kernel->pushMiddleware(Middleware\VarDumperMiddleware::class);
     }
 
     /**
