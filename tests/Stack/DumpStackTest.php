@@ -8,7 +8,7 @@ use AvtoDev\StackedDumper\Stack\DumpStack;
 use AvtoDev\StackedDumper\Tests\AbstractTestCase;
 
 /**
- * @covers \AvtoDev\StackedDumper\Stack\DumpStack<extended>
+ * @covers \AvtoDev\StackedDumper\Stack\DumpStack
  */
 class DumpStackTest extends AbstractTestCase
 {

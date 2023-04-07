@@ -9,7 +9,7 @@ use AvtoDev\StackedDumper\Tests\AbstractTestCase;
 use AvtoDev\StackedDumper\Middleware\VarDumperMiddleware;
 
 /**
- * @covers \AvtoDev\StackedDumper\Middleware\VarDumperMiddleware<extended>
+ * @covers \AvtoDev\StackedDumper\Middleware\VarDumperMiddleware
  */
 class VarDumperMiddlewareTest extends AbstractTestCase
 {
