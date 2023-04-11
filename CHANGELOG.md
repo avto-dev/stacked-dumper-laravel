@@ -12,9 +12,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
+- Composer version up to `2.5.5`
 - Minimal require PHP version now is `8.0`
 - Minimal Laravel version is `9.1`
-- Composer version up to `2.5.5`
 
 ## v1.6.0
 
