@@ -13,7 +13,7 @@ on:
 jobs: # Docs: <https://git.io/JvxXE>
   php:
     name: PHP ${{ matrix.php }}, ${{ matrix.setup }} setup, laravel ${{ matrix.laravel }}
-    runs-on: ubuntu-stable
+    runs-on: ubuntu-latest
     timeout-minutes: 10
     strategy:
       fail-fast: false
