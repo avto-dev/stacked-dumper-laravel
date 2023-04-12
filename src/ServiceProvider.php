@@ -4,7 +4,8 @@ declare(strict_types = 1);
 
 namespace AvtoDev\StackedDumper;
 
-use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Foundation\Http\Kernel;
+use Illuminate\Contracts\Http\Kernel as KernelContract;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -15,7 +16,10 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function boot(): void
     {
-        $this->app->make(Kernel::class)->pushMiddleware(Middleware\VarDumperMiddleware::class);
+        /** @var Kernel $kernel */
+        $kernel = $this->app->make(KernelContract::class);
+
+        $kernel->pushMiddleware(Middleware\VarDumperMiddleware::class);
     }
 
     /**

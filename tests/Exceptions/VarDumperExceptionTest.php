@@ -9,7 +9,7 @@ use AvtoDev\StackedDumper\Tests\AbstractTestCase;
 use AvtoDev\StackedDumper\Exceptions\VarDumperException;
 
 /**
- * @covers \AvtoDev\StackedDumper\Exceptions\VarDumperException<extended>
+ * @covers \AvtoDev\StackedDumper\Exceptions\VarDumperException
  */
 class VarDumperExceptionTest extends AbstractTestCase
 {

@@ -9,7 +9,7 @@ use Illuminate\Contracts\Http\Kernel as HttpKernel;
 use AvtoDev\StackedDumper\Middleware\VarDumperMiddleware;
 
 /**
- * @covers \AvtoDev\StackedDumper\ServiceProvider<extended>
+ * @covers \AvtoDev\StackedDumper\ServiceProvider
  */
 class ServiceProviderTest extends AbstractTestCase
 {
