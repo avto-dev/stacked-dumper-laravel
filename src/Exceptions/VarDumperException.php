@@ -19,7 +19,7 @@ class VarDumperException extends \Exception
      */
     public function __construct(string $message,
                                 int $code = Response::HTTP_INTERNAL_SERVER_ERROR,
-                                Throwable $previous = null)
+                                ?Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }
@@ -49,7 +49,7 @@ class VarDumperException extends \Exception
      *
      * @return Response
      */
-    public function render(Request $request = null): Response
+    public function render(?Request $request = null): Response
     {
         return new Response(static::generateView($this->getMessage()), $this->getCode());
     }
